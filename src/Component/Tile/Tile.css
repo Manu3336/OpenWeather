@@ -1,0 +1,83 @@
+.Page{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    scroll-behavior: auto;
+  
+}
+.Tile {
+    width: 55%;
+    padding: 16px;
+    min-height: 80px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+    margin: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #89f7fe, #63e6ff, #48d3ff, #4abeff, #66a6ff);
+    /* background-image: linear-gradient(to left, #89f7fe, #9ff7ff, #b3f7ff, #c5f7ff, #d6f7ff); */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.Col{
+    display: block;
+    min-height: 80px;
+    justify-content: center;
+    padding: 15px;
+}
+.Row{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start
+}
+
+.Tile h4, h2{
+    color:white;
+    
+}
+.Tile p{
+    text-transform: capitalize;
+    color:white;
+    
+    margin-right: 5px;
+}
+.owf {
+    color:white;
+}
+
+.Tile:hover,
+.Tile:active {
+    box-shadow: 0 4px 8px 0 rgba(0, 37, 248, 0.2), 0 6px 20px 0 rgba(0, 37, 248, 0.2);
+    opacity: 0.9;
+    transform: scale(1.01);
+}
+
+@media(min-width: 500px){
+    .SideMenu{
+        width: 90%;
+        display: flex;
+        height: 80%;
+        width: auto;
+        align-items: center;
+        margin: 15px;
+    }
+}
+
+@media(max-width: 800px){
+    .Tile{
+        width: 90%;
+        height: 80%;
+        margin: 15px;
+    }
+}
+
+@media(max-width: 775px){
+    .Tile{
+        width: 90%;
+        height: 80%;
+        margin: 15px;
+    }
+}
