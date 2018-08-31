@@ -3,8 +3,45 @@
     flex-flow: row wrap;
     justify-content: center;
 }
+.HeaderTabs{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
 .Header h1{
     padding: 15px 0 15px 0;
     color:white; 
 }
 
+.HeaderTabs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .HeaderTabs li{
+      display: inline;
+      margin: 20px;
+  }
+.HeaderTabs a{
+    background: transparent;
+    border-color:#fff;
+    border-style: solid;
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border-width: thin;
+    text-decoration:none;
+    display: table-cell;
+}
+
+a:hover{
+    background-color: #63A9FF;
+    color: white;
+    border-color:#63A9FF;
+    border-style: solid;
+    transform: scale(1.01);
+  }

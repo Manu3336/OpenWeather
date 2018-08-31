@@ -1,0 +1,33 @@
+.Chart{
+    width: 55%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    scroll-behavior: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: white;
+    margin-top: 50px;
+    border-radius: 3px;
+    z-index: 5;
+}
+
+.ChartDock{
+    background: #63A9FF;
+    height: 60px;
+    width: 100%;
+    z-index: 4;
+    padding-left: 15px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.ChartDock h3{
+    color: white;
+}
+
+.Chart:hover,
+.Chart:active {
+    transform: scale(1.001);
+}

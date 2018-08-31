@@ -4,11 +4,16 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "canvasjs": "^1.8.1",
+    "chart.js": "^2.7.2",
     "font-awesome": "^4.7.0",
     "owfont": "git+https://github.com/websygen/owfont.git",
     "react": "^16.4.2",
+    "react-chartjs-2": "^2.7.4",
     "react-dom": "^16.4.2",
     "react-open-weather-map": "^2.3.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.5"
   },
   "scripts": {
