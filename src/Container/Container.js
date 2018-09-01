@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
 import axios from "axios";
-import { Route } from 'react-router-dom';
 import Post from '../Component/Tile/Tile';
 
 
 const API_KEY = "b36522d6bf96adf429cd69da3dd7c4aa";
-const CityName = "Bangalore"
+const CityName = "Mumbai"
 
 class Container extends Component{
     state = {
@@ -22,7 +21,7 @@ class Container extends Component{
         
       }    
     render(){
-        let posts = <p style={{ textAlign: 'center' }}>Oops! Something went wrong</p>;
+        let posts = <p style={{ textAlign: 'center' }}>Fething Data.. Please check your network</p>;
         let cityName='';
         if(this.state.posts.list !== undefined){
             posts = this.state.posts.list.map( (list) =>{
