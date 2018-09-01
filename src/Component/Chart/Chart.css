@@ -1,6 +1,6 @@
 .Chart{
     width: 55%;
-    height: 80%;
+    height: 70%;
     margin: auto;
     display: flex;
     flex-flow: row wrap;
@@ -14,6 +14,9 @@
 }
 
 .ChartDock{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     background: #63A9FF;
     height: 60px;
     width: 100%;
