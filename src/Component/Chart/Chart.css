@@ -34,3 +34,24 @@
 .Chart:active {
     transform: scale(1.001);
 }
+
+@media(min-width: 500px){
+    .Chart{
+        width: 90%;
+        height: 80%;
+    }
+}
+
+@media(max-width: 800px){
+    .Chart{
+        width: 90%;
+        height: 80%;
+    }
+}
+
+@media(max-width: 775px){
+    .Chart{
+        width: 90%;
+        height: 80%;
+    }
+}
