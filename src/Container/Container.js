@@ -23,7 +23,7 @@ class Container extends Component{
         
       }    
     render(){
-        let posts = <p style={{ color:'white',textAlign: 'center' }}>Fething Data..!! Please check your network </p>
+        let posts = <p style={{ color:'white',textAlign: 'center' }}>Fetching Data..!! Please check your network </p>
         if(this.state.posts.list !== undefined){
             posts = this.state.posts.list.map( (list) =>{
               return <Post 
