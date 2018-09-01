@@ -5,7 +5,7 @@ import Post from '../Component/Tile/Tile';
 
 const API_KEY = "b36522d6bf96adf429cd69da3dd7c4aa";
 const CityName = "Mumbai"
-const URI = `https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&appid=${API_KEY}&units=metric;`
+const URI = `https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&appid=${API_KEY}&units=metric`
 
 class Container extends Component{
     state = {
