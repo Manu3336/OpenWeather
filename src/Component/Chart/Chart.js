@@ -40,7 +40,7 @@ class Chart extends Component{
         return(
             <div className="Chart">
                 <div className="ChartDock">
-                    <h3>Weather For Bangalore, IN</h3>
+                    <h3>Weather Forecast</h3>
                 </div>
                 <div>
                     <p>Highest weather in 5 days</p>
