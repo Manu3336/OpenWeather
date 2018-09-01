@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Tile.css';
-import 'owfont/css/owfont-regular.css';
+// import 'owfont/css/owfont-regular.css';
 
 const post = (props) => (
     <div className="Page">
@@ -10,11 +10,11 @@ const post = (props) => (
         <div className="Col">
             <h2>Weather</h2>
             <p>{props.description}</p>
-                <div className={`owf owf-${props.weather}`} />
+                {/* <div className={`owf owf-${props.weather}`} /> */}
         </div>
         <div className="Col">
             <h2>Date & Time</h2>
-            <h4>{props.dt_txt}</h4>
+            <h4>{props.time}</h4>
         </div>
         <div className="Col">
             <h2>Temperature</h2>

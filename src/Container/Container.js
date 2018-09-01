@@ -13,7 +13,7 @@ class Container extends Component{
       }
 
       componentWillMount(){
-        axios.get(`http://api.openweathermap.org/data/2.5/forecast?q=${CityName}&appid=${API_KEY}&units=metric`).then(response=>{
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${CityName}&appid=${API_KEY}&units=metric`).then(response=>{
           this.setState({posts:response.data});
           var postsValue = response.data.list
           console.log(postsValue);
@@ -21,15 +21,15 @@ class Container extends Component{
         
       }    
     render(){
-        let posts = <p style={{ textAlign: 'center' }}>Fething Data.. Please check your network</p>;
+        let posts = <p style={{ color:'white',textAlign: 'center' }}>Fething Data.. Please check your networkfir</p>;
         let cityName='';
         if(this.state.posts.list !== undefined){
             posts = this.state.posts.list.map( (list) =>{
               return <Post 
               temp={list.main.temp}
               humidity={list.main.humidity}
-              dt_txt={list.dt_txt}
               weather={list.weather[0].id}
+              time={list.dt_txt}
               description={list.weather[0].description}            
               />
             })
