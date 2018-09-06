@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css'
 import {Link} from 'react-router-dom';
 
-const header = () =>(
+const header = (props) =>(
     <div>  
         <div className = "Header">
             <h1>Mumbai, IN</h1>
@@ -17,9 +17,18 @@ const header = () =>(
                     <li>
                         <Link to="/charts">Chart</Link>
                     </li>
+
+                    <li>
+                        <div>
+                            <input type="text" 
+                            value={props.keycity}
+                             onChange={props.changeCallback}
+                             />
+                        </div>
+                    </li>
                 </ul>
             </nav> 
-        </div>   
+        </div> 
     </div>
 )
 
