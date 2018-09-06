@@ -5,25 +5,23 @@ import {Link} from 'react-router-dom';
 const header = (props) =>(
     <div>  
         <div className = "Header">
-            <h1>Mumbai, IN</h1>
+            
         </div>  
         
         <div className = "HeaderTabs">
             <nav>
                 <ul>
-                    <li>
+                    {/* <li>
                         <Link to="/">List</Link>
                     </li>
                     <li>
                         <Link to="/charts">Chart</Link>
-                    </li>
+                    </li> */}
 
                     <li>
                         <div>
-                            <input type="text" 
-                            value={props.keycity}
-                             onChange={props.changeCallback}
-                             />
+                            <h1>{props.keycity}</h1>
+                            <input type="text" placeholder="Search City" value={props.keycity} onChange={props.changeCallback}/>
                         </div>
                     </li>
                 </ul>

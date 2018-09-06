@@ -8,7 +8,7 @@ const API_KEY = "b36522d6bf96adf429cd69da3dd7c4aa";
 class Container extends Component{
     state = {
         posts:[],
-        cityName:''
+        cityName:'Mumbai'
       }
 
       componentWillMount(){
@@ -24,6 +24,10 @@ class Container extends Component{
           // console.log(postsValue);
         })
       }    
+
+      handleOnChange = (data)=>{
+        this.setState({cityName:data.target.value});
+      }
       changeCallback = (data) => {
         this.setState({cityName:data.target.value});
         // console.log('Data',data.target.value);
