@@ -8,7 +8,8 @@ const API_KEY = "b36522d6bf96adf429cd69da3dd7c4aa";
 class Container extends Component{
     state = {
         posts:[],
-        cityName:'Mumbai'
+        cityName:'Mumbai',
+        cityNameHeader:'Mumbai',
       }
 
       componentWillMount(){
@@ -22,6 +23,8 @@ class Container extends Component{
           this.setState({posts:response.data});
           var postsValue = response.data.list
           // console.log(postsValue);
+        }).catch((error) => {
+          this.setState({posts:[]});
         })
       }    
 
@@ -30,12 +33,11 @@ class Container extends Component{
       }
       changeCallback = (data) => {
         this.setState({cityName:data.target.value});
-        // console.log('Data',data.target.value);
-        if(data.target.value !== ''){
-          this.openweathermapRequest(data.target.value);
-        } else {
-          this.setState({posts:[]});
-        }
+        
+      }
+      onclickCallback = (e) => {
+        this.openweathermapRequest(this.state.cityName);
+        this.setState({cityNameHeader:this.state.cityName});
       }
     render(){
         let posts = <p style={{ color:'white',textAlign: 'center' }}>Fetching Data..!! Please check your network </p>
@@ -53,7 +55,7 @@ class Container extends Component{
           }
         return(
           <div>
-            <div><Header keycity={this.state.cityName} changeCallback={this.changeCallback}/></div>
+            <div><Header keycity={this.state.cityName} cityNameHeader={this.state.cityNameHeader} changeCallback={this.changeCallback} onclickCallback={this.onclickCallback}/></div>
             <div>
                 {posts}                
             </div>

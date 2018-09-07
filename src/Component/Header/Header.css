@@ -38,6 +38,30 @@
     display: table-cell;
 }
 
+.button{
+    background: transparent;
+    border-color:#fff;
+    border-style: solid;
+    color: white;
+    padding: 10px;
+    width: 80px;
+    border-width: thin;
+    text-decoration:none;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.textBox{
+    background: transparent;
+    border-color:#fff;
+    border-style: solid;
+    color: white;
+    padding: 10px;
+    width: 180px;
+    border-width: thin;
+    text-decoration:none;
+}
+
 a:hover{
     background-color: #63A9FF;
     color: white;

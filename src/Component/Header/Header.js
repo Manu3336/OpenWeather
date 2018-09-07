@@ -11,17 +11,23 @@ const header = (props) =>(
         <div className = "HeaderTabs">
             <nav>
                 <ul>
-                    {/* <li>
+                    <li>
                         <Link to="/">List</Link>
                     </li>
                     <li>
                         <Link to="/charts">Chart</Link>
-                    </li> */}
+                    </li>
 
                     <li>
                         <div>
-                            <h1>{props.keycity}</h1>
-                            <input type="text" placeholder="Search City" value={props.keycity} onChange={props.changeCallback}/>
+                            <h1>{props.cityNameHeader}</h1>
+                            <div>
+                                <input className="textBox" type="text" placeholder="Search City" value={props.keycity} onChange={props.changeCallback}/>
+                                <span className="button" onClick={props.onclickCallback}>Search</span>
+                            </div>
+                            <div>
+                                
+                            </div>
                         </div>
                     </li>
                 </ul>
